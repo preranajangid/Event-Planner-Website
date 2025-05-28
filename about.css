@@ -1,0 +1,86 @@
+
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Heading */
+h2 {
+  color: #6badb5;
+  font-size: 40px; /* Reduced from 36px */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: auto;
+}
+
+/* Content layout: Image left, text right */
+.about-content {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row; /* Ensure image comes first */
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Image column */
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  margin-top: 30px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Text column (on right) */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+    text-align: center;
+  }
+}

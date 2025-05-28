@@ -1,0 +1,242 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .gallery {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .gallery .heading {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .gallery .heading span {
+      color: #e91e63;
+    }
+
+    .box_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      
+    }
+
+    .box {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: translate(-5px);
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .box.title{
+      position:absolute;
+      top: -10px;left:0;right:0;
+      background: #555;
+      color:#fff
+      
+
+
+    }
+    .box .icon {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding-bottom: 15px;
+    }
+
+    .box .icon a {
+      color: #555;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    .box .icon a:hover {
+      color: #e91e63;
+    }
+
+.box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.box img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.box:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay for dark effect */
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover::after {
+  opacity: 1;
+}
+
+/* Icon container */
+.box .icon {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Show icons on hover */
+.box:hover .icon {
+  opacity: 1;
+}
+
+/* Icon buttons */
+.box .icon a {
+  color: #ffd700; /* Yellow like in the screenshot */
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.box .icon a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.box .icon a:hover {
+  transform: scale(1.2);
+}
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  display: block;
+}
+
+.box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover .icon {
+  opacity: 1;
+}
+
+.box .icon a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.box .icon a:hover {
+  transform: scale(1.2);
+}
+
+
+
+    @media (max-width: 600px) {
+      .gallery {
+        padding: 30px 10px;
+      }
+    }.about-text {
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  background-color: #ffffff; /* White background for text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpmort" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="style22.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Event Planner</div>
+        <nav>
+            <u1>
+                <li><a href="serives.html">Services</a></li>
+                 <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </u1>
+        </nav> 
+        <div id="menu"></div>
+        <i class="fa-light fa-bars-staggered"></i>
+        </header>
+    <section class="h">
+       
+        <h1>Your Dream Event Starts Here</h1>
+        <div id="menu"></div>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <p id="line">We plan weddings ,birthdays,corporate events, and more!</p>
+    
+    </section>
+    
+    
+    </body>
+</html>
+</body>
